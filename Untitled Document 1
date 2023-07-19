@@ -1,0 +1,67 @@
+/*CREATE TABLE EMP
+(
+  Emp_no INT(10) NOT NULL PRIMARY KEY,
+  Ename varchar(10) not null,
+  Job varchar(10) not null,
+  MGR int(10),
+  Hire_date date(10) not null,
+  SAL int,
+  Comm int,
+  Dept_no int not null
+  )*/
+  /*insert into EMP
+(
+  Emp_no,Ename,Job,MGR,Hire_date,SAL,Comm,Dept_no
+  )
+  values
+  (7369,'SMITH','CLERK',7902,'17-DEC-80',800,NULL,20),
+  (7499,'ALLEN','SALESMAN',7698,'20-FEB-81',1600,300,30),
+  (7521,'WARD','SALESMAN',7698,'22-FEB-81',1250,500,30),
+  (7566,'JONES','MANAGER',7839,'02-APR-81',2975,NULL,20),
+  (7654,'MARTIN','SALESMAN',7698,'28-SEP-81',1250,1400,30),
+  (7698,'BLAKE','MANAGER',7839,'01-MAY-81',2850,NULL,30),
+  (7782,'CLARK','MANAGER',7839,'09-JUN-81',2450,NULL,10),
+  (7788,'SCOTT','ANALYST',7566,'19-APR-87',3000,NULL,20),
+  (7839,'KING','PRESIDENT',NULL,'17-NOV-81',5000,NULL,10),
+  (7844,'TURNER','SALESMAN',7698,'08-SEP-81',1500,0,30),
+  (7876,'ADAMS','CLERK',7788,'23-MAY-87',1100,NULL,20),
+  (7900,'JAMES','CLERK',7698,'03-DEC-81',950,NULL,30),
+  (7902,'FORD','ANALYST',7566,'03-DEC-81',3000,NULL,20),
+  (7934,'MILLER','CLERK',7782,'23-JAN-82',1300,NULL,10);*/
+  
+ /* create table DEPT
+(
+  DEPT_NO INT NOT NULL PRIMARY KEY,
+  DNAME VARCHAR(10) NOT NULL,
+  LOC VARCHAR(10) NOT NULL
+  );*/
+  
+  INSERT INTO DEPT
+(
+  DEPT_NO,DNAME,LOC
+  )
+  VALUES
+  (10,'ACCOUNTING','NEWYORK'),
+  (20,'RESEARCH','DELLAS'),
+  (30,'SALES','CHICAGO'),
+  (40,'OPERATION','BOSTON');// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int bin[10];
+    int i=0;
+    while(n!=0)
+    {
+        int rem=n%2;
+        bin[i]=rem;
+        i++;
+        n=n/2;
+    }
+    for(int j=i-1;j>=0;j--)
+    {
+     printf("%d", bin[j]);
+    }
+    return 0;
+}
